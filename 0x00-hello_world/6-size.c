@@ -1,4 +1,10 @@
 #include <stdio.h>
+
+/**
+ * main -function entry
+ *
+ * Return: 0 success
+ */
 int main(void)
 {
 	char c;
