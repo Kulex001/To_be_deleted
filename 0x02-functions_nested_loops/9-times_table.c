@@ -2,7 +2,7 @@
 
 /**
  * times_table - print a table
- * @void: indicates null arg
+ *@void: indicates null arg
  */
 
 void times_table(void)
