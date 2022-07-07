@@ -3,7 +3,7 @@
 /**
  * add - add two num
  * @a: int param 1
- * @a: int param 2
+ * @b: int param 2
  *
  * Return: sum of the two int
  */
