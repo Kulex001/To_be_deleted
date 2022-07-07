@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _islower - function to check for lowercase character
+ * @c: ascii char to check
  *
  * return: 0
  */
