@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - function that checks for a digit
+ * _isdigit - function that checks for a digit
  * @c: the int for the paramaters of my function
  * Return: 1 if c is a digit or 0 otherwise
  */
