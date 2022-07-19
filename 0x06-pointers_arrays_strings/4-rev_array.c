@@ -3,6 +3,7 @@
  * reverse_array - reverse order of an array
  * @a: array
  * @n: size of array
+ * Return: nothing
  */
 void reverse_array(int *a, int n)
 {
