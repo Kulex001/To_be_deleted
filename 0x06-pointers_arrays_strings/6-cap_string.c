@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * cap_string - capitalize a sentence
  * @a: string passed
@@ -7,25 +6,29 @@
  */
 char *cap_string(char *a)
 {
-	char *pointer, **point;
-	char b, d;
-	char c[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
-	int i, j, k;
+	int k[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	int i = 0;
+	int j;
 
-	point = &a;
-	i = strlen(a);
-	for (j = 0; j < i; j++)
+	if (str[i] >= 97 && str[i] <= 122)
 	{
-		b = a[j];
-		d = a[j + 1];
-		pointer = strchr(c, b);
-		if (pointer != 0 && d >= 97 && d <= 122)
-		{
-			k = d - 97;
-			a[j + 1] = 65 + k;
-		}
+		str[i] = str[i] - 32;
 	}
-	*point = a;
-
-	return (*point);
+	i++;
+	while (str[i] != '\0')
+	{
+		for (j = 0; j < 13; j++)
+		{
+			if (str[i] == k[j])
+			{
+				if (str[i + 1] >= 97 && str[i + 1] <= 122)
+				{
+					str[i + 1] = str[i + 1] - 32;
+				}
+				break;
+			}
+		}
+		i++;
+	}
+	return (str);
 }
