@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * reverse_array - reverse order of an array
  * @a: array
@@ -7,20 +8,14 @@
  */
 void reverse_array(int *a, int n)
 {
-	int **point;
-	int c, d, e, f;
+	int x, y, s;
 
+	y = n - 1;
 
-	point = &a;
-	d = 0;
-
-	for (c = (n - 1); c >= n / 2; c--)
+	for (x = 0; x < n / 2; x++)
 	{
-		e = a[c];									f = a[d];
-		a[c] = f;
-		a[d] = e;
-		d++;
+		s = a[x];
+		a[x] = a[y];
+		a[y--] = s;
 	}
-
-	*point = a;
 }
