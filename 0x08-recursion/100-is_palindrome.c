@@ -5,7 +5,7 @@ int string(char **, int, int);
 
 /**
  * is_palindrome - check whether a string is palindrome
- * @n: the birth
+ * @s: the string
  * Return: 1 it true otherwise 0
  */
 int is_palindrome(char *s)
