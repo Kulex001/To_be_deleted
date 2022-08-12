@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
  * add_node - add a node at a beginning of the list
- * head: first node of the list
- * str: data to insert in the new node
+ * @head: first node of the list
+ * @str: data to insert in the new node
  * Return: pointer to the new node
  */
 
