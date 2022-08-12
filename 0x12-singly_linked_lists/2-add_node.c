@@ -7,22 +7,26 @@
  * *str: data to insert in the new node
  * Return: pointer to the new node
  */
+
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new;
-	unsigned int len = 0;
+	int length;
+	list_t  *ptr = (list_t *)malloc(sizeof(list_t));
+	char *data = strdup(str);
 
-	while (str[len])
-		len++;
-
-	new = malloc(sizeof(list_t));
-	if (!new)
+	if (ptr == NULL)
 		return (NULL);
+	if (str == NULL)
+		length = 0;
+	else
+		length = strlen(data);
 
-	new->str = strdup(str);
-	new->len = len;
-	new->next = (*head);
-	(*head) = new;
-
-	return (*head);
+	ptr->str = data;
+	ptr->len = length;
+	if (*head == NULL)
+		ptr->next = NULL;
+	else
+		ptr->next = *head;
+	*head = ptr;
+	return (ptr);
 }
