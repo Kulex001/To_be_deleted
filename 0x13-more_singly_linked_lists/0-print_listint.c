@@ -3,8 +3,9 @@
 
 /*
  * print_listint - prints all the elements of a listint_t list
- * @h: holds elemenets of a list
+ * @h: holds elements of a list
  * Return: size of list
+ * 
  */
 size_t print_listint(const listint_t *h)
 {
