@@ -25,7 +25,7 @@ void close_elf(int elf);
  */
 void check_elf(unsigned char *e_ident)
 {
-	int undex;
+	int index;
 
 	for (index = 0; index < 4; index++)
 	{
